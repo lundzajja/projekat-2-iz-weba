@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "slug": "electronic",
+    "name": "Elektronska Muzika & Hyperpop",
+    "description": "Muzika kreirana pomoću elektronskih i digitalnih instrumenata, i savremena dekonstrukcija popa.",
+    "color": "#ff4b4b",
+    "history": "Rani eksperimenti sa elektronikom počinju sredinom 20. veka, ali žanr doživljava mejnstrim eksploziju sa razvojem sintisajzera 70-ih i 80-ih. U 21. veku, podžanr Hyperpop je dekonstruisao i ubrzao standardne pop elemente do ekstrema.",
+    "creators": "Pionirali su ga umetnici poput Kraftwerka pa sve do modernih vizionara kao što su A.G. Cook i umetnici okupljeni oko PC Music lejbla.",
+    "iconicAlbum": {
+      "title": "Oil of Every Pearl's Un-Insides",
+      "artist": "SOPHIE",
+      "coverUrl": "https://placehold.co/400x400/ff4b4b/ffffff?text=SOPHIE"
+    },
+    "tribute": {
+      "active": true,
+      "text": "Posebna posveta i večna zahvalnost neprežaljenoj <b>SOPHIE</b> koja je tragično preminula, ali čiji je inovativni dizajn zvuka zauvek izmenio tok muzike, oblikujući celokupni hyperpop pokret. Takođe veliko hvala <b>Charli xcx</b>, jednoj od njenih najbližih saradnica, koja neprestano održava SOPHIE nasleđe živim u svojoj umetnosti i srcu."
+    }
+  },
+  {
+    "id": 2,
+    "slug": "hiphop",
+    "name": "Hip Hop",
+    "description": "Ritmički muzički stil koji obuhvata repovanje, produkciju bitova i miksovanje.",
+    "color": "#4b77ff",
+    "history": "Nastao kasnih 1970-ih tokom uličnih žurki u Bronksu, Njujork. Brzo je prerastao iz lokalne underground kulture u svetski dominantan muzički i kulturni fenomen.",
+    "creators": "DJ Kool Herc se često navodi kao jedan od osnivača žanra, zajedno sa Grandmaster Flash-om i Afrika Bambaata-om.",
+    "iconicAlbum": {
+      "title": "Illmatic",
+      "artist": "Nas",
+      "coverUrl": "https://placehold.co/400x400/4b77ff/ffffff?text=ILLMATIC"
+    },
+    "tribute": { "active": false }
+  },
+  {
+    "id": 3,
+    "slug": "altrock",
+    "name": "Alternativni Rok",
+    "description": "Podžanr rok muzike koji je nastao u nezavisnom muzičkom podzemlju tokom 1980-ih.",
+    "color": "#1db954",
+    "history": "Odbacivši komercijalizam mejnstrim roka 80-ih, bendovi su počeli sa sirovijim, distorziranim i melanholičnim zvukom. Ultimativni bum doživeo je početkom 90-ih kroz Grunge pokret u Sijetlu.",
+    "creators": "Nastao trudom nezavisnih bendova underground scene (Pixies, Sonic Youth), a omasovljen generacijom bendova kao što je Nirvana.",
+    "iconicAlbum": {
+      "title": "Nevermind",
+      "artist": "Nirvana",
+      "coverUrl": "https://placehold.co/400x400/1db954/ffffff?text=NEVERMIND"
+    },
+    "tribute": { "active": false }
+  },
+  {
+    "id": 4,
+    "slug": "jazz",
+    "name": "Džez",
+    "description": "Muzički žanr koji karakterišu sving ritmovi, bluz tonovi i vrhunska improvizacija.",
+    "color": "#ffaa00",
+    "history": "Koreni džeza dosežu do kasnog 19. i ranog 20. veka u Nju Orleansu crpeći elemente iz bluza i regtajma. Od tada je prošao kroz mnogo epoha poput Svinga, Bopa, Cool Jazz-a i Fre Džeza.",
+    "creators": "Afroameričke zajednice na američkom Jugu. Imena poput Louis Armstrong-a, Miles Davis-a i John Coltrane-a oblikovala su žanr.",
+    "iconicAlbum": {
+      "title": "Kind of Blue",
+      "artist": "Miles Davis",
+      "coverUrl": "https://placehold.co/400x400/ffaa00/000000?text=KIND+OF+BLUE"
+    },
+    "tribute": { "active": false }
+  }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "album": "BRAT",
+    "artist": "Charli XCX",
+    "rating": 5,
+    "review": "THATS MY JAM. This is my go to album. I luuuuv it so much. The whole concept of it is sooooooo good. I think this is one of the best albums of all time.",
+    "coverUrl": "https://placehold.co/400x400/81c784/ffffff?text=BRAT",
+    "source": "Musicboard"
+  },
+  {
+    "id": 2,
+    "album": "Norman Fucking Rockwell!",
+    "artist": "Lana Del Rey",
+    "rating": 5,
+    "review": "I love this album. It is one of the kind. Best american record. Everytime I feel in some weird way with my emotions, I play this album.",
+    "coverUrl": "https://placehold.co/400x400/1c313a/ffffff?text=NFR",
+    "source": "Musicboard"
+  },
+  {
+    "id": 3,
+    "album": "IGOR",
+    "artist": "Tyler, The Creator",
+    "rating": 5,
+    "review": "One of a kind.",
+    "coverUrl": "https://placehold.co/400x400/f8bbd0/000000?text=IGOR",
+    "source": "Musicboard"
+  },
+  {
+    "id": 4,
+    "album": "CRASH",
+    "artist": "Charli XCX",
+    "rating": 5,
+    "review": "The beginning. This album basically introduced me to Charli xcx and her world of music. I was listening to her before of course, but not in this way. After this album, I started listening to her music more frequently and exploring her work. Then I found scrapped album XCX World, searched lore behind it. I am hoping she will release XCX World to the public soon.",
+    "coverUrl": "https://placehold.co/400x400/1565c0/ffffff?text=CRASH",
+    "source": "Musicboard"
+  },
+  {
+    "id": 5,
+    "album": "Sin Miedo (del Amor y Otros Demonios) ∞",
+    "artist": "Kali Uchis",
+    "rating": 5,
+    "review": "UGHHHHHHH. When I played this album for the first time, I remember I was like: \"OH WTH LADYYYY\". This album is most streamed album on my last.fm. With a reason. Every time I would listen to this album, I would transcendence into another dimension. I love this album and I thank him for saving me in so many different occasions",
+    "coverUrl": "https://placehold.co/400x400/9c27b0/ffffff?text=SIN+MIEDO",
+    "source": "Musicboard"
+  },
+  {
+    "id": 6,
+    "album": "After Hours",
+    "artist": "The Weeknd",
+    "rating": 4.5,
+    "review": "Mračan noćni zvuk pun sintesajzera. Svaka pesma nosi neverovatnu bioskopsku atmosferu.",
+    "coverUrl": "https://placehold.co/400x400/c62828/ffffff?text=AFTER+HOURS",
+    "source": "Musicboard"
+  }
+]

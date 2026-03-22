@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "album": "Random Access Memories",
+    "artist": "Daft Punk",
+    "rating": 5,
+    "review": "Remek-delo koje elegantno spaja elektronsku muziku sa instrumentalima uživo. Svaka pesma je putovanje.",
+    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/a/a7/Random_Access_Memories.jpg"
+  },
+  {
+    "id": 2,
+    "album": "To Pimp a Butterfly",
+    "artist": "Kendrick Lamar",
+    "rating": 5,
+    "review": "Duboko istraživanje afroameričkog iskustva, protkano zamršenim džez i fank instrumentalima.",
+    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/f/f6/Kendrick_Lamar_-_To_Pimp_a_Butterfly.png"
+  },
+  {
+    "id": 3,
+    "album": "In Rainbows",
+    "artist": "Radiohead",
+    "rating": 4.5,
+    "review": "Toplo, intimno i besprekorno producirano. Pronalazi savršen balans između njihove eksperimentalne i melodične strane.",
+    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/2/2e/In_Rainbows_Official_Cover.jpg"
+  },
+  {
+    "id": 4,
+    "album": "Norman Fucking Rockwell!",
+    "artist": "Lana Del Rey",
+    "rating": 4.5,
+    "review": "Sjajna oda Americi. Njeno pisanje pesama nikada nije bilo oštrije i evokativnije.",
+    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/4/4e/Lana_Del_Rey_-_Norman_Fucking_Rockwell.png"
+  }
+]

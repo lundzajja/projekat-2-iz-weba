@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otkrij Zvuk | Početna</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        html { scroll-behavior: smooth; }
+        .centered-link { display: block; text-align: center; margin-top: 2rem; font-weight: bold; color: var(--primary); text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="container nav-content">
+            <a href="index.html" class="logo">Otkrij <span>Zvuk</span></a>
+            <nav class="nav-links">
+                <a href="#pocetna">Početna</a>
+                <a href="#recenzije">Recenzije</a>
+                <a href="#zanrovi">Žanrovi</a>
+                <a href="#lastfm">Last.fm</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="pocetna" class="hero">
+            <div class="container hero-content">
+                <h1>Zaroni u Muziku</h1>
+                <p>Čitaj iskrene recenzije, istražuj različite žanrove i prati navike slušanja uživo preko Last.fm platforme.</p>
+                <div class="hero-actions">
+                    <a href="#recenzije" class="btn btn-primary">Čitaj Recenzije</a>
+                    <a href="#lastfm" class="btn btn-secondary">Moja Slušanja</a>
+                </div>
+            </div>
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </section>
+
+        <section id="recenzije" class="section">
+            <div class="container">
+                <h2 class="section-title">Najnovije Recenzije</h2>
+                <div class="reviews-grid" id="reviewsContainer">
+                    <div class="loading-state">Učitavanje recenzija...</div>
+                </div>
+                <a href="index.html#recenzije" class="centered-link">Više recenzija &rarr;</a>
+            </div>
+        </section>
+
+        <section id="zanrovi" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Istraži Žanrove</h2>
+                <div class="genres-grid" id="genresContainer">
+                    <div class="loading-state">Učitavanje žanrova...</div>
+                </div>
+                <a href="index.html#zanrovi" class="centered-link">Svi žanrovi &rarr;</a>
+            </div>
+        </section>
+
+        <section id="lastfm" class="section">
+            <div class="container">
+                <div class="lastfm-header">
+                    <h2 class="section-title">Moj Last.fm Profil</h2>
+                    <p class="lastfm-subtitle">Praćenje nedavno puštanih pesama sa Last.fm uživo</p>
+                    
+                    <div class="username-picker">
+                        <input type="text" id="lastfmUser" value="predragkon" placeholder="Unesite Last.fm Ime">
+                        <button id="updateUserBtn" class="btn btn-primary btn-sm">Ažuriraj</button>
+                    </div>
+                </div>
+
+                <div class="recent-tracks-list" id="lastfmContainer">
+                    <div class="loading-state">Učitavanje nedavnih pesama...</div>
+                </div>
+                
+                <h3 class="section-title" style="font-size: 1.8rem; margin-top: 4rem;">Top 5 Albuma</h3>
+                <div class="lastfm-grid" id="lastfmTopAlbums">
+                    <div class="loading-state">Učitavanje top albuma...</div>
+                </div>
+
+                <h3 class="section-title" style="font-size: 1.8rem; margin-top: 4rem;">Top 5 Pesama</h3>
+                <div class="lastfm-grid" id="lastfmTopTracks">
+                    <div class="loading-state">Učitavanje top pesama...</div>
+                </div>
+
+                <a href="index.html#lastfm" class="centered-link">Last.fm Profil &rarr;</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 Otkrij Zvuk. Veb Projekat 2.</p>
+            <p>Pokreće <a href="https://www.last.fm" target="_blank">Last.fm API</a></p>
+        </div>
+    </footer>
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
