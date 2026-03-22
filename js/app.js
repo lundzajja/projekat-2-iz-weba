@@ -54,21 +54,18 @@ async function getLastfmTrackCover(artist, track) {
 }
 
 // Initialize Application
-function initMainContent() {
-    const header = document.querySelector('.navbar');
+async function initMainContent() {
     const hero = document.querySelector('.hero');
-
-    // update header state, lazy event listeners etc. (if needed)
     if (hero) hero.classList.add('hero-loaded');
 
     const reviewsContainer = document.getElementById('reviewsContainer');
-    if (reviewsContainer) loadMusicboardReviews(reviewsContainer);
+    const reviewsPromise = reviewsContainer ? loadMusicboardReviews(reviewsContainer) : Promise.resolve();
 
     const genresContainer = document.getElementById('genresContainer');
-    if (genresContainer) loadGenres(genresContainer);
+    const genresPromise = genresContainer ? loadGenres(genresContainer) : Promise.resolve();
 
     const genreContentContainer = document.getElementById('genreContentContainer');
-    if (genreContentContainer) loadGenreDetails(genreContentContainer);
+    const genreDetailsPromise = genreContentContainer ? loadGenreDetails(genreContentContainer) : Promise.resolve();
 
     const lastfmContainer = document.getElementById('lastfmContainer');
     const lastfmTopAlbumsContainer = document.getElementById('lastfmTopAlbums');
@@ -76,9 +73,10 @@ function initMainContent() {
     const userBtn = document.getElementById('updateUserBtn');
     const userInput = document.getElementById('lastfmUser');
 
+    let lastfmPromise = Promise.resolve();
     if (lastfmContainer || lastfmTopAlbumsContainer || lastfmTopTracksContainer) {
         const defaultUser = userInput ? userInput.value.trim() : 'predragkon';
-        fetchAllLastfmData(defaultUser, lastfmContainer, lastfmTopAlbumsContainer, lastfmTopTracksContainer);
+        lastfmPromise = fetchAllLastfmData(defaultUser, lastfmContainer, lastfmTopAlbumsContainer, lastfmTopTracksContainer);
 
         if (userBtn && userInput) {
             const updateFn = () => {
@@ -90,6 +88,19 @@ function initMainContent() {
             userInput.addEventListener('keypress', (e) => {
                 if (e.key === 'Enter') updateFn();
             });
+        }
+    }
+
+    // Čekamo da se kritični delovi za visinu stranice učitaju
+    await Promise.all([reviewsPromise, genresPromise, genreDetailsPromise, lastfmPromise]);
+
+    // Re-scroluj do hasha ako postoji, jer se layout shift desio
+    if (window.location.hash) {
+        const target = document.querySelector(window.location.hash);
+        if (target) {
+            setTimeout(() => {
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }, 100);
         }
     }
 }
@@ -253,10 +264,12 @@ async function loadGenreDetails(container) {
     }
 }
 
-function fetchAllLastfmData(user, containerRecent, containerAlbums, containerTracks) {
-    if (containerRecent) fetchLastfmRecentTracks(user, containerRecent);
-    if (containerAlbums) fetchLastfmTopAlbums(user, containerAlbums);
-    if (containerTracks) fetchLastfmTopTracks(user, containerTracks);
+async function fetchAllLastfmData(user, containerRecent, containerAlbums, containerTracks) {
+    const promises = [];
+    if (containerRecent) promises.push(fetchLastfmRecentTracks(user, containerRecent));
+    if (containerAlbums) promises.push(fetchLastfmTopAlbums(user, containerAlbums));
+    if (containerTracks) promises.push(fetchLastfmTopTracks(user, containerTracks));
+    await Promise.all(promises);
 }
 
 async function fetchLastfmRecentTracks(user, container) {
