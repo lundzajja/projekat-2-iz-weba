@@ -94,15 +94,6 @@ async function initMainContent() {
     // Čekamo da se kritični delovi za visinu stranice učitaju
     await Promise.all([reviewsPromise, genresPromise, genreDetailsPromise, lastfmPromise]);
 
-    // Re-scroluj do hasha ako postoji, jer se layout shift desio
-    if (window.location.hash) {
-        const target = document.querySelector(window.location.hash);
-        if (target) {
-            setTimeout(() => {
-                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }, 100);
-        }
-    }
 }
 
 function scheduleDeferredLoad() {

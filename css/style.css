@@ -222,14 +222,12 @@ a {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 2rem;
-    min-height: 500px; /* Rezerviše prostor dok se učitava sadržaj */
 }
 
 .lastfm-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 1.5rem;
-    min-height: 300px;
 }
 
 .recent-tracks-list {
