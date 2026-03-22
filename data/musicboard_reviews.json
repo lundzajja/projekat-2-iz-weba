@@ -10,11 +10,11 @@
   },
   {
     "id": 2,
-    "album": "Norman Fucking Rockwell!",
+    "album": "Norman F***ing Rockwell!",
     "artist": "Lana Del Rey",
     "rating": 5,
     "review": "I love this album. It is one of the kind. Best american record. Everytime I feel in some weird way with my emotions, I play this album.",
-    "coverUrl": "https://placehold.co/400x400/1c313a/ffffff?text=NFR",
+    "coverUrl": "./pics/nfr.jpeg",
     "source": "Musicboard"
   },
   {
