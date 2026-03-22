@@ -13,7 +13,7 @@ async function getLastfmAlbumCover(artist, album) {
 
     const endpoint = `https://ws.audioscrobbler.com/2.0/?method=album.getinfo&api_key=${API_KEY}&artist=${encodeURIComponent(artist)}&album=${encodeURIComponent(album)}&format=json`;
     try {
-        const resp = await fetch(endpoint, {cache: 'force-cache'});
+        const resp = await fetch(endpoint);
         if (!resp.ok) return null;
 
         const data = await resp.json();
@@ -36,7 +36,7 @@ async function getLastfmTrackCover(artist, track) {
 
     const endpoint = `https://ws.audioscrobbler.com/2.0/?method=track.getinfo&api_key=${API_KEY}&artist=${encodeURIComponent(artist)}&track=${encodeURIComponent(track)}&format=json`;
     try {
-        const resp = await fetch(endpoint, {cache: 'force-cache'});
+        const resp = await fetch(endpoint);
         if (!resp.ok) return null;
 
         const data = await resp.json();
@@ -108,7 +108,7 @@ async function loadMusicboardReviews(container) {
     container.innerHTML = `<div class="loading-state">Povlačenje Musicboard recenzija i Last.fm omota albuma za korisnika @${MUSICBOARD_USERNAME}...</div>`;
     try {
         await new Promise(resolve => setTimeout(resolve, 300));
-        const response = await fetch('./data/musicboard_reviews.json', { cache: 'force-cache' });
+        const response = await fetch('./data/musicboard_reviews.json?v=' + Math.random());
         if (!response.ok) throw new Error('Neuspelo povlačenje Musicboard podataka');
         const reviews = await response.json();
         
