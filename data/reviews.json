@@ -52,41 +52,5 @@
     "review": "This album was my introduction to the discography of The Weeknd and at that time I was highly influenced by RnB, soul, flamenco type of genre. This album is such a classic and I love every second of it (except interludes but they are there to show the full image of the trilogy (After Hours, Dawn FM and Hurry Up Tomorrow)).",
     "coverUrl": "./pics/dawnfm.webp",
     "source": "Musicboard"
-  },
-  {
-    "id": 7,
-    "album": "Random Access Memories",
-    "artist": "Daft Punk",
-    "rating": 5,
-    "review": "Remek-delo koje elegantno spaja elektronsku muziku sa instrumentalima uživo. Svaka pesma je putovanje.",
-    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/a/a7/Random_Access_Memories.jpg",
-    "source": "otkrij Zvuk"
-  },
-  {
-    "id": 8,
-    "album": "To Pimp a Butterfly",
-    "artist": "Kendrick Lamar",
-    "rating": 5,
-    "review": "Duboko istraživanje afroameričkog iskustva, protkano zamršenim džez i fank instrumentalima.",
-    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/f/f6/Kendrick_Lamar_-_To_Pimp_a_Butterfly.png",
-    "source": "otkrij Zvuk"
-  },
-  {
-    "id": 9,
-    "album": "In Rainbows",
-    "artist": "Radiohead",
-    "rating": 4.5,
-    "review": "Toplo, intimno i besprekorno producirano. Pronalazi savršen balans između njihove eksperimentalne i melodične strane.",
-    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/2/2e/In_Rainbows_Official_Cover.jpg",
-    "source": "otkrij Zvuk"
-  },
-  {
-    "id": 10,
-    "album": "Norman Fucking Rockwell!",
-    "artist": "Lana Del Rey",
-    "rating": 4.5,
-    "review": "Sjajna oda Americi. Njeno pisanje pesama nikada nije bilo oštrije i evokativnije.",
-    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/4/4e/Lana_Del_Rey_-_Norman_Fucking_Rockwell.png",
-    "source": "otkrij Zvuk"
   }
 ]
