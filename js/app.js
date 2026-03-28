@@ -192,7 +192,7 @@ async function loadGenreDetails(container) {
     const genreId = urlParams.get('id');
 
     if (!genreId) {
-        container.innerHTML = `<div class="error-state" style="margin-top:200px;">Nije izabran ni jedan žanr. <a href="index.html#zanrovi">Vrati se nazad</a></div>`;
+        container.innerHTML = `<div class="error-state" style="margin-top:200px;">Nije izabran ni jedan žanr. <a href="javascript:void(0);" onclick="window.history.length > 1 ? window.history.back() : window.location.href='index.html#zanrovi'; return false;">Vrati se nazad</a></div>`;
         return;
     }
 
@@ -229,7 +229,7 @@ async function loadGenreDetails(container) {
             </section>
             
             <div class="container pb-6" style="padding-bottom: 6rem;">
-                <a href="index.html#zanrovi" style="color: var(--text-secondary); margin-bottom: 2rem; display: inline-block;">&larr; Nazad na sve žanrove</a>
+                <a href="javascript:void(0);" onclick="window.history.length > 1 ? window.history.back() : window.location.href='index.html#zanrovi'; return false;" style="color: var(--text-secondary); margin-bottom: 2rem; display: inline-block;">&larr; Nazad</a>
                 
                 <div class="genre-info-grid">
                     <div class="info-main">
